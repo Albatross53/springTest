@@ -61,5 +61,5 @@ jobs:
       run: >
         aws deploy create-deployment --application-name springTest
         --deployment-config-name CodeDeployDefault.AllAtOnce
-        --deployment-group-name springTest
+        --deployment-group-name springTest-group
         --s3-location bucket=$S3_BUCKET_NAME,bundleType=zip,key=practice-testing.zip
